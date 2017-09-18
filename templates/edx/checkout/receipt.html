@@ -58,7 +58,7 @@
               {% if payment_method %}
                 <dt>{% trans "Payment Method:" %}</dt>
                 {% if payment_method == 'paypal' %}
-                  {% payment_method = 'PayPal' %}
+                  {% set payment_method = 'PayPal' %}
                 {% endif %}
                 <dd>{{ payment_method }}</dd>
               {% endif %}
