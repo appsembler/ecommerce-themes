@@ -57,10 +57,11 @@
               <dd>{{ order.number }}</dd>
               {% if payment_method %}
                 <dt>{% trans "Payment Method:" %}</dt>
-                {% if payment_method == 'paypal' %}
-                  {% set payment_method = 'PayPal' %}
+                {% if payment_method == "paypal" %}
+                  <dd>PayPal</dd>
+                {% else %}
+                  <dd>{{ payment_method }}</dd>
                 {% endif %}
-                <dd>{{ payment_method }}</dd>
               {% endif %}
               <dt>{% trans "Order Date:" %}</dt>
               <dd>{{ order.date_placed|date:"E d, Y" }}</dd>
