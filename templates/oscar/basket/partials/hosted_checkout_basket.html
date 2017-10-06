@@ -103,7 +103,7 @@
                         {% if voucher_form %}
                             <div class="use-voucher col-sm-7 col-xs-8">
                                 <p id="voucher_form_link">
-                                    <a href="#voucher">{% trans "Apply a coupon code" %}</a>
+                                    <a href="#voucher"></a>
                                 </p>
                                 {% include 'basket/partials/add_voucher_form.html' %}
                             </div>
@@ -154,7 +154,7 @@
                                 {% trans "Checkout" %}
                             {% elif processor.NAME == 'paypal' %}
                                 {# Translators: Do NOT translate the name PayPal. #}
-                                {% trans "Checkout with PayPal" %}
+                                {% trans "Checkout" %}
                             {% endif %}
                         </button>
                     {% endfor %}
