@@ -24,8 +24,7 @@
                                  alt="{{ line_data.product_title|default_if_none:'' }}"/>
                         </div>
                         <div class="col-md-5 col-sm-12">
-                            <p class="product-title">{{ line_data.product_title }} {% if line_data.course_key %}- {{ line_data.course_key.org }}
-                                ({{ line_data.course_key.run }}) {% endif %}</p>
+                            <p class="product-title">{{ line_data.product_title }}</p>
                             <p class="product-description">{{ line_data.product_description }}</p>
                         </div>
                         {% if line_data.enrollment_code %}
